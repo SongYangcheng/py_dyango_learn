@@ -12,6 +12,68 @@
 
         }
 
+        .sub-header {
+            height: 100px;
+            /* background-color: #ff6700; */
+        }
+
+        .sub-header .container {
+            width: 1200px;
+            margin: 0 auto;
+
+            /* border-left: #000;
+            border-right: #b0b0b0; */
+        }
+
+        .sub-header .logo {
+            width: 234px;
+            height: 100px;
+            /* border: 1px solid red; */
+            background-color: white;
+            float: left;
+        }
+
+        .sub-header .menu-list {
+            /* border: 1px solid red; */
+            line-height: 100px;
+            float: left;
+        }
+
+        .sub-header .menu-list a:hover {
+            color: #ff6700;
+        }
+
+        .sub-header .menu-list a {
+            padding: 0 20px;
+            /* padding 行间距设置 */
+            display: inline-block;
+            text-decoration: none;
+            /* text-decoration可以去除下划线 */
+            color: #333;
+            font-size: 16px;
+
+
+
+
+        }
+
+
+        .sub-header .search {
+            float: right;
+            /* border: 1px solid red; */
+            line-height: 100px;
+        }
+
+        .search img {
+            height: 40px;
+            width: 40px;
+            border: black;
+            margin-top: -10px;
+        }
+
+
+
+
 
         .header {
             height: 60px;
@@ -27,6 +89,7 @@
         .header .account {
             line-height: 60px;
             padding: 0 20px;
+            float: right;
         }
 
         .header .container {
@@ -37,7 +100,7 @@
         .container a {
             color: #b0b0b0;
             /* line-height: ;为距离文本框的垂直高度 */
-            line-height: 40px;
+            line-height: 60px;
             display: inline-block;
             font-size: 12px;
             margin-right: 5px;
@@ -70,6 +133,28 @@
             <!-- 当div无高度时会撑起 -->
         </div>
 
+    </div>
+    <div class="sub-header">
+        <div class="container">
+            <div class="logo">
+                <!-- 行内标签高度设置无效a为行内标签 ，边距设置无效-->
+                <a href="/小米logo.png" style="display: inline-block; margin-top: 22px;">
+                    <img src="/小米logo.png" style="height: 56px; width: 56px;">
+                </a>
+            </div>
+            <div class="menu-list">
+                <a href="#">小米手机</a>
+                <a href="#">Redmi红米</a>
+                <a href="#">电视</a>
+                <a href="#">笔记本</a>
+                <a href="#">平板</a>
+            </div>
+            <div class="search">
+                <input type="text" style="height: 30px; width: 300px; bottom: auto;"><img src="/搜索符号.png">
+            </div>
+            <div style="clear: both"></div>
+            <!-- 否则无法将父类撑起 -->
+        </div>
     </div>
 
 </body>
