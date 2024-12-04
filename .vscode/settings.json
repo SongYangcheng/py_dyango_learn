@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/learn_2/example_xiaomishopping.html"
+    "livePreview.defaultPreviewPath": "/learn_2/example_xiaomishopping.html",
+    "liveServer.settings.multiRootWorkspaceName": "py_dyango_learn"
 }

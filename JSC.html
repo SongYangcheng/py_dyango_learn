@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <span id="txt">这是一个span标签</span>
+    <ul id = "city">
+
+    </ul>
+
+    <script type = "text/javascript">
+        // function show(){
+
+        //             // var name = "搞钱";
+        //     // 从页面中获取id为txt的元素
+        //     var tag = document.getElementById("txt");
+        //     var dataString = tag.innerText;
+        //     //滚动
+        //     var firstChar = dataString[0];
+        //     var othrtString = dataString.substring(1, dataString.length);
+        //     var newText = otherString + firstChar;
+        //     //跟新页面
+        //     tag.innerText = newText;
+
+        //     // console.log(newText);
+        // }
+        // setInterval(show, 1000);
+        var citylist = ["北京", "上海", "广州", "深圳"]
+        for (var idx in citylist){
+            var text = citylist[idx];
+            var tag = document.createElement("li");
+            tag.innerText = text;
+            var parentTag = document.getElementById("city");
+            parentTag.appendChild(tag);
+
+        }
+
+    </script>
+</body>
+
+</html>
